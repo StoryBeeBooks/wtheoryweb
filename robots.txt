@@ -1,0 +1,30 @@
+# robots.txt for WTheory.com (West Solution Consulting Corp.)
+# Last Updated: November 24, 2025
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Disallow crawling of any future admin or private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Sitemap location
+Sitemap: https://www.wtheory.com/sitemap.xml
+
+# Crawl-delay (optional, can help with server load)
+# Crawl-delay: 1
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

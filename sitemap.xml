@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.wtheory.com/</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/wyss-singapore.jpg</image:loc>
+            <image:title>WYSS Singapore - Industrial Engineering Web Design</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/ordosaxum.jpg</image:loc>
+            <image:title>Ordo Saxum - Luxury Stone Fabrication Website</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/cornerstone.jpg</image:loc>
+            <image:title>CornerStone - Industrial Stone Company Web Design</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/jrpartners.jpg</image:loc>
+            <image:title>JR Partners - Business Conglomerate Portfolio Website</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/nridl.jpg</image:loc>
+            <image:title>NRIDL - Educational Nonprofit Web Design</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/storybee.jpg</image:loc>
+            <image:title>StoryBee - Children's Arts Education Platform</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.wtheory.com/Image%20Assets/oroaquae.jpg</image:loc>
+            <image:title>Oro Aquae Gallery - Contemporary Art Gallery Website</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Design Experience Page -->
+    <url>
+        <loc>https://www.wtheory.com/design-experience</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- FAQ Page -->
+    <url>
+        <loc>https://www.wtheory.com/faq</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.wtheory.com/contact</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Policies Page -->
+    <url>
+        <loc>https://www.wtheory.com/policies</loc>
+        <lastmod>2025-11-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>

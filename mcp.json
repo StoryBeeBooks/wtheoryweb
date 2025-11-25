@@ -1,0 +1,173 @@
+{
+  "mcpVersion": "1.0",
+  "name": "WTheory Web Design Studio",
+  "description": "Strategic web design studio based in Toronto, Ontario, Canada. We combine business strategy with world-class design to create websites that drive sales growth. Our team includes Harvard alumni, top design school graduates, and business leaders.",
+  "provider": {
+    "name": "West Solution Consulting Corp.",
+    "url": "https://www.wtheory.com",
+    "email": "support@wtheory.com",
+    "location": {
+      "city": "Toronto",
+      "province": "Ontario",
+      "country": "Canada"
+    }
+  },
+  "services": [
+    {
+      "name": "Strategic Web Design",
+      "description": "Comprehensive strategic review and business-focused web design that drives measurable sales growth and ROI.",
+      "category": "Design",
+      "keywords": ["web design", "strategic design", "business consulting", "UX design", "UI design", "Toronto web design"]
+    },
+    {
+      "name": "User Experience (UX) Design",
+      "description": "Research-driven UX design that prioritizes user needs and business objectives through the Design Thinking Framework.",
+      "category": "Design",
+      "keywords": ["UX design", "user experience", "user research", "usability testing", "information architecture"]
+    },
+    {
+      "name": "Responsive Web Development",
+      "description": "Mobile-first, accessible, SEO-optimized web development using modern technologies and best practices.",
+      "category": "Development",
+      "keywords": ["web development", "responsive design", "mobile-first", "accessibility", "WCAG", "AODA"]
+    },
+    {
+      "name": "Business Strategy & Consulting",
+      "description": "Strategic business review, competitive analysis, and growth consulting led by Harvard-trained strategists.",
+      "category": "Consulting",
+      "keywords": ["business strategy", "consulting", "strategic review", "competitive analysis", "growth strategy"]
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "WTheory - Strategic Web Design Studio | Toronto",
+      "description": "Portfolio of strategic web design projects for industrial, nonprofit, and arts organizations. Effective web designs aligned with business strategy and financial goals.",
+      "keywords": ["Toronto web design", "strategic web design", "portfolio", "case studies"],
+      "lastModified": "2025-11-24"
+    },
+    {
+      "path": "/design-experience",
+      "title": "Our Design Process | WTheory",
+      "description": "Learn about our six-phase Design Thinking process: Empathize, Define, Ideate, Test, Develop, Launch. Expert design for business goals through user needs.",
+      "keywords": ["design process", "Design Thinking", "UX process", "web design methodology"],
+      "lastModified": "2025-11-24"
+    },
+    {
+      "path": "/faq",
+      "title": "Frequently Asked Questions | WTheory Toronto Web Design",
+      "description": "Comprehensive answers about WTheory's web design services, team, process, pricing, and Toronto-based meeting locations. Serving clients across Canada.",
+      "keywords": ["FAQ", "web design Toronto", "pricing", "process", "team", "Canada web design"],
+      "lastModified": "2025-11-24"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact WTheory | Toronto Web Design Studio",
+      "description": "Get in touch with WTheory for strategic web design services. Email: support@wtheory.com. Toronto-based, serving clients across Canada.",
+      "keywords": ["contact", "email", "Toronto", "get in touch"],
+      "lastModified": "2025-11-24"
+    },
+    {
+      "path": "/policies",
+      "title": "Legal Policies | WTheory",
+      "description": "Terms of Use, Privacy Policy, Accessibility Statement, and Cookie Policy for West Solution Consulting Corp. (WTheory). PIPEDA, AODA, and WCAG compliant.",
+      "keywords": ["policies", "terms of use", "privacy policy", "accessibility", "legal"],
+      "lastModified": "2025-11-24"
+    }
+  ],
+  "team": {
+    "description": "Our multidisciplinary team combines strategic thinking, design excellence, and technical expertise.",
+    "qualifications": [
+      "Harvard University Alumni",
+      "Top Design School Graduates (OCAD, Emily Carr, RISD, Parsons)",
+      "Business Leaders and Former Executives",
+      "Full-Stack Developers and UX Researchers",
+      "Accessibility Experts (WCAG 2.1, AODA Certified)"
+    ]
+  },
+  "serviceArea": {
+    "primary": "Toronto, Ontario, Canada",
+    "coverage": "Canada-wide (Vancouver, Montreal, Calgary, Ottawa, Edmonton, Halifax, Winnipeg)",
+    "international": true,
+    "meetingLocations": [
+      "Higher education institutions (University of Toronto, Ryerson/TMU, OCAD, York)",
+      "Industry partner co-working spaces",
+      "Client offices",
+      "Virtual meetings (Zoom, Microsoft Teams, Google Meet)"
+    ]
+  },
+  "industries": [
+    "Industrial Manufacturing",
+    "B2B Services",
+    "Non-Profit Organizations",
+    "Arts & Culture",
+    "Professional Services",
+    "Technology Companies",
+    "Healthcare",
+    "Education",
+    "Real Estate",
+    "Financial Services"
+  ],
+  "technologies": {
+    "cms": ["WordPress", "Webflow", "Shopify", "Drupal", "Contentful"],
+    "frontend": ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Next.js"],
+    "backend": ["Node.js", "Python", "PHP", "Ruby on Rails"],
+    "hosting": ["AWS", "Google Cloud", "Microsoft Azure", "Vercel", "Netlify", "WP Engine"]
+  },
+  "compliance": {
+    "accessibility": ["WCAG 2.1 Level AA", "AODA (Accessibility for Ontarians with Disabilities Act)"],
+    "privacy": ["PIPEDA (Personal Information Protection and Electronic Documents Act)", "GDPR-ready"],
+    "email": ["CASL (Canadian Anti-Spam Legislation) compliant"]
+  },
+  "seo": {
+    "primaryKeywords": [
+      "Toronto web design",
+      "strategic web design",
+      "Canada web design",
+      "business web design",
+      "UX design Toronto",
+      "web design agency Toronto",
+      "custom web design Canada"
+    ],
+    "localSEO": {
+      "city": "Toronto",
+      "province": "Ontario",
+      "country": "Canada",
+      "serviceRadius": "Canada-wide"
+    }
+  },
+  "socialProof": {
+    "projects": [
+      "WYSS Singapore - Industrial Engineering",
+      "Ordo Saxum - Luxury Stone Fabrication",
+      "CornerStone - Industrial Stone Company",
+      "JR Partners - Business Conglomerate",
+      "NRIDL - Educational Nonprofit",
+      "StoryBee - Children's Arts Education",
+      "Oro Aquae Gallery - Contemporary Art"
+    ],
+    "testimonials": "Available upon request"
+  },
+  "pricing": {
+    "ranges": {
+      "small": "$15,000 - $30,000 CAD",
+      "medium": "$30,000 - $75,000 CAD",
+      "enterprise": "$75,000 - $200,000+ CAD",
+      "ecommerce": "$50,000 - $150,000+ CAD"
+    },
+    "paymentTerms": "Milestone-based (30-50% deposit, progress payments, final upon launch)",
+    "financing": "Extended payment plans available for qualified clients"
+  },
+  "contact": {
+    "email": "support@wtheory.com",
+    "consultation": "Free 30-60 minute initial consultation available",
+    "response": "Typically within 1 business day"
+  },
+  "links": {
+    "homepage": "https://www.wtheory.com",
+    "designProcess": "https://www.wtheory.com/design-experience",
+    "faq": "https://www.wtheory.com/faq",
+    "contact": "https://www.wtheory.com/contact",
+    "policies": "https://www.wtheory.com/policies"
+  }
+}
