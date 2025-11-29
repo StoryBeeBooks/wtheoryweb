@@ -47,6 +47,18 @@ function initializeHeader() {
         });
     });
 
+    // Close menu when clicking on the overlay (dark background area)
+    if (navMenu) {
+        navMenu.addEventListener('click', (e) => {
+            // Only close if clicking directly on the nav-menu (overlay), not on its children
+            if (e.target === navMenu) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.style.overflow = '';
+            }
+        });
+    }
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (navMenu.classList.contains('active') && 
