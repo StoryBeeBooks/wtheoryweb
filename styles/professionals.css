@@ -50,6 +50,24 @@
     margin: 0 var(--spacing-sm);
 }
 
+/* Pricing Disclaimer */
+.pricing-disclaimer {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--color-text-grey);
+    max-width: 700px;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background: #fafafa;
+    border-radius: 8px;
+    border-left: 3px solid var(--color-border);
+}
+
+.pricing-disclaimer strong {
+    color: var(--color-primary);
+}
+
 /* Section Titles */
 .section-title {
     font-family: var(--font-heading);
@@ -237,7 +255,7 @@
 
 .packages-section {
     padding: calc(var(--spacing-xl) * 2) 0;
-    background: #fafafa;
+    background: var(--color-secondary);
 }
 
 /* Pricing Cards Row */
@@ -249,7 +267,7 @@
 }
 
 .pricing-card {
-    background: var(--color-secondary);
+    background: #fafafa;
     border-radius: 12px;
     border: 2px solid var(--color-border);
     transition: all var(--transition-normal);
