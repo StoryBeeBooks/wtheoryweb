@@ -59,7 +59,6 @@
     font-size: var(--text-sm);
     line-height: 1.6;
     color: var(--color-text-grey);
-    max-width: 700px;
     margin-top: var(--spacing-xl);
     padding: var(--spacing-md);
     background: #fafafa;
