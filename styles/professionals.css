@@ -622,17 +622,24 @@
 }
 
 @media (max-width: 768px) {
+    /* Hero section center-aligned on mobile */
+    .hero-section {
+        text-align: center;
+    }
+
     .page-title {
         font-size: var(--text-3xl);
     }
 
     .hero-paragraph {
         font-size: var(--text-base);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .pricing-highlight {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: var(--spacing-xs);
     }
 
