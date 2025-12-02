@@ -563,43 +563,6 @@
 }
 
 /* ============================================
-   CTA Section
-   ============================================ */
-
-.cta-section {
-    padding: calc(var(--spacing-xl) * 2) 0;
-    background: var(--color-primary);
-}
-
-.cta-content {
-    text-align: center;
-}
-
-.cta-title {
-    font-family: var(--font-heading);
-    font-size: var(--text-4xl);
-    font-weight: 500;
-    color: var(--color-secondary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.cta-text {
-    font-family: var(--font-body);
-    font-size: var(--text-lg);
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: var(--spacing-xl);
-}
-
-.cta-section .cta-button {
-    background: var(--color-secondary);
-    color: var(--color-primary);
-}
-
-.cta-section .cta-button:hover {
-    background: #f0f0f0;
-}
-
-/* ============================================
    Responsive Design
    ============================================ */
 
