@@ -230,28 +230,19 @@ button {
 }
 
 /* Hero Language Switcher */
-.hero-language-switcher {
-    display: flex;
-    justify-content: flex-end;
+.hero-lang-wrapper {
     margin-bottom: 1.5rem;
 }
 
-.hero-lang-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    color: #1a1a2e;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+.cta-lang {
+    border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.hero-lang-btn:hover {
-    background: transparent;
+.cta-lang:hover {
+    border-color: #ffffff !important;
+}
+
+.cta-arrow-white {
     color: #ffffff;
 }
 
