@@ -229,6 +229,41 @@ button {
     display: none !important;
 }
 
+/* Hero Language Switcher */
+.hero-language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.hero-lang-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.hero-lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.hero-lang-btn::before {
+    content: "🌐";
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
 /* ============================================
    Main Content
    ============================================ */
