@@ -625,6 +625,79 @@ button {
 }
 
 /* ============================================
+   Special Offers Section (Index Page)
+   ============================================ */
+.special-offers-section {
+    padding: var(--spacing-xl) 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+.special-offers-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.02em;
+}
+
+.special-offers-subtitle {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    color: var(--color-text-grey);
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.special-offers-subtitle strong {
+    color: #800020;
+    font-weight: 600;
+}
+
+/* Icon-based profession grid */
+.special-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--spacing-sm);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.special-offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: var(--color-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    min-height: 100px;
+}
+
+.special-offer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.special-offer-icon {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.special-offer-name {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+/* ============================================
    CTA Section
    ============================================ */
 .cta-section {
@@ -864,6 +937,37 @@ button {
         width: 100%;
         max-width: 300px;
         justify-content: space-between;
+    }
+    
+    /* Special Offers Section - Mobile */
+    .special-offers-section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .special-offers-title {
+        font-size: var(--text-2xl);
+    }
+    
+    .special-offers-subtitle {
+        font-size: var(--text-base);
+    }
+    
+    .special-offers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xs);
+    }
+    
+    .special-offer-card {
+        padding: var(--spacing-sm);
+        min-height: 80px;
+    }
+    
+    .special-offer-icon {
+        font-size: 1.5rem;
+    }
+    
+    .special-offer-name {
+        font-size: var(--text-xs);
     }
     
     .header-container {
