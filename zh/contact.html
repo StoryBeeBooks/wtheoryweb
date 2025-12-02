@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact WTheory | Toronto Web Design Studio | Get a Free Consultation</title>
-    <meta name="description" content="Contact WTheory for strategic web design services. Toronto-based, serving Canada-wide. Email: support@wtheory.com. Free consultation available. Harvard alumni + top designers ready to help.">
-    <meta name="keywords" content="contact web designer Toronto, web design consultation, Toronto design studio contact, hire web designer Canada, web design inquiry">
-    <link rel="canonical" href="https://www.wtheory.com/contact">
+    <title>联系WTheory | 多伦多网页设计工作室 | 获取免费咨询</title>
+    <meta name="description" content="联系WTheory获取战略网页设计服务。总部位于多伦多，服务全加拿大。邮箱：support@wtheory.com。提供免费咨询。哈佛校友与顶级设计师随时为您服务。">
+    <meta name="keywords" content="联系多伦多网页设计师, 网页设计咨询, 多伦多设计工作室联系方式, 加拿大雇佣网页设计师, 网页设计咨询">
+    <link rel="canonical" href="https://www.wtheory.com/zh/contact">
     
     <!-- hreflang tags -->
     <link rel="alternate" hreflang="en" href="https://www.wtheory.com/contact" />
@@ -15,9 +15,9 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.wtheory.com/contact">
-    <meta property="og:title" content="Contact WTheory | Toronto Web Design Studio">
-    <meta property="og:description" content="Get in touch for strategic web design services. Free consultation available.">
+    <meta property="og:url" content="https://www.wtheory.com/zh/contact">
+    <meta property="og:title" content="联系WTheory | 多伦多网页设计工作室">
+    <meta property="og:description" content="联系我们获取战略网页设计服务。提供免费咨询。">
     
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -68,35 +68,35 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
-          "item": "https://www.wtheory.com/"
+          "name": "首页",
+          "item": "https://www.wtheory.com/zh/"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Contact",
-          "item": "https://www.wtheory.com/contact"
+          "name": "联系我们",
+          "item": "https://www.wtheory.com/zh/contact"
         }
       ]
     }
     </script>
     
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/breadcrumb.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/breadcrumb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header-container"></div>
 
     <!-- Breadcrumb Navigation -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <nav class="breadcrumb-nav" aria-label="面包屑导航">
         <ol class="breadcrumb-list">
-            <li><a href="/">Home</a></li>
+            <li><a href="/zh/">首页</a></li>
             <li><span class="breadcrumb-separator">›</span></li>
-            <li><span class="breadcrumb-current">Contact</span></li>
+            <li><span class="breadcrumb-current">联系我们</span></li>
         </ol>
     </nav>
 
@@ -105,14 +105,14 @@
         <section class="contact-hero">
             <div class="container">
                 <div class="hero-lang-wrapper">
-                    <a href="/zh/contact" class="cta-button cta-lang">
-                        <span class="cta-text">中文</span>
+                    <a href="/contact" class="cta-button cta-lang">
+                        <span class="cta-text">English</span>
                         <span class="cta-arrow cta-arrow-white">→</span>
                     </a>
                 </div>
                 <div class="contact-content">
-                    <div class="contact-label">Get in touch</div>
-                    <h1 class="contact-title">Email us</h1>
+                    <div class="contact-label">联系我们</div>
+                    <h1 class="contact-title">发送邮件</h1>
                     <a href="mailto:mario.xu@wtheory.com" class="contact-email">mario.xu@wtheory.com</a>
                 </div>
             </div>
@@ -120,7 +120,22 @@
     </main>
 
     <div id="footer-container"></div>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/contact-gradient.js"></script>
+    <script>
+        // Load Chinese header and footer
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/zh/components/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                });
+            
+            fetch('/zh/components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+    <script src="../scripts/contact-gradient.js"></script>
 </body>
 </html>
