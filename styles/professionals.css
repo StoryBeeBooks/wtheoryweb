@@ -78,8 +78,8 @@
 
 .professions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--spacing-sm);
 }
 
 .profession-card {
@@ -87,30 +87,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     background: var(--color-secondary);
-    border-radius: 12px;
+    border-radius: 8px;
     text-decoration: none;
     color: var(--color-primary);
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     border: 1px solid var(--color-border);
-    min-height: 160px;
-    cursor: pointer;
+    min-height: 100px;
 }
 
 .profession-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-}
-
-.profession-card.coming-soon {
-    opacity: 0.7;
-    cursor: default;
-}
-
-.profession-card.coming-soon:hover {
-    transform: none;
-    box-shadow: none;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .profession-card.contact-card {
@@ -124,39 +113,24 @@
 }
 
 .profession-icon {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-.profession-name {
-    font-family: var(--font-heading);
-    font-size: var(--text-lg);
-    font-weight: 500;
-    text-align: center;
+    font-size: 1.75rem;
     margin-bottom: var(--spacing-xs);
 }
 
-.template-badge {
+.profession-name {
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    color: var(--color-secondary);
-    background: var(--color-primary);
-    padding: 4px 12px;
-    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 
-.status-badge {
-    font-family: var(--font-body);
-    font-size: var(--text-sm);
-    color: var(--color-text-grey);
-    padding: 4px 12px;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.05);
+.section-intro a {
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
-.contact-card .status-badge {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--color-secondary);
+.section-intro a:hover {
+    text-decoration: none;
 }
 
 /* ============================================
@@ -167,10 +141,25 @@
     padding: calc(var(--spacing-xl) * 2) 0;
 }
 
+.templates-category-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-border);
+}
+
 .templates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-xl);
+    margin-bottom: calc(var(--spacing-xl) * 2);
+}
+
+.templates-grid:last-child {
+    margin-bottom: 0;
 }
 
 .template-card {
@@ -516,7 +505,7 @@
 
 @media (max-width: 968px) {
     .professions-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
     
     .package-block {
@@ -568,25 +557,29 @@
     }
 
     .professions-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-sm);
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xs);
     }
 
     .profession-card {
-        padding: var(--spacing-md);
-        min-height: 140px;
+        padding: var(--spacing-sm);
+        min-height: 80px;
     }
 
     .profession-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .profession-name {
-        font-size: var(--text-base);
+        font-size: var(--text-xs);
     }
 
     .templates-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .templates-category-title {
+        font-size: var(--text-xl);
     }
 
     .package-block {
@@ -629,11 +622,21 @@
 
 @media (max-width: 480px) {
     .professions-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .profession-card {
-        min-height: 120px;
+        min-height: 70px;
+        padding: var(--spacing-xs);
+    }
+    
+    .profession-icon {
+        font-size: 1.25rem;
+        margin-bottom: 2px;
+    }
+    
+    .profession-name {
+        font-size: 10px;
     }
 
     .feature-list li {
