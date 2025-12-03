@@ -129,30 +129,30 @@
     justify-content: center;
     width: 48px;
     height: 48px;
-    margin: 2rem auto 0;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 4rem auto 0;
+    border: 2px solid transparent;
     border-radius: 50%;
-    background: transparent;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(90deg, #FFA500 0%, #FF6B9D 50%, #C77DFF 100%) border-box;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .bio-toggle:hover {
-    border-color: rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .bio-toggle-icon {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
     line-height: 1;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .bio-toggle:hover .bio-toggle-icon {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .bio-toggle[aria-expanded="true"] .bio-toggle-icon {
