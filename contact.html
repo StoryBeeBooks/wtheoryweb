@@ -114,7 +114,10 @@
                     <div class="contact-label">Get in touch</div>
                     <h1 class="contact-title">Email us</h1>
                     <a href="mailto:mario.xu@wtheory.com" class="contact-email">mario.xu@wtheory.com</a>
-                  <p class="contact-bio">Mario Jia Yi Xu is a Toronto-based business strategy and digital product leader who blends commercial rigor with refined creative direction. He leads a multidisciplinary studio of senior web designers, service designers, typographers, and copywriters to deliver strategic websites and brand experiences that drive measurable business growth. His work focuses on aligning product strategy, visual tone, and conversion-focused design to help organizations scale online.<br><br>B.Eng, McMaster University · Master's Degree, Harvard University</p>
+                  <button class="bio-toggle" aria-expanded="false" aria-controls="contact-bio">
+                    <span class="bio-toggle-icon">+</span>
+                  </button>
+                  <p class="contact-bio" id="contact-bio" hidden>Mario Jia Yi Xu is a Toronto-based business strategy and digital product leader who blends commercial rigor with refined creative direction. He leads a multidisciplinary studio of senior web designers, service designers, typographers, and copywriters to deliver strategic websites and brand experiences that drive measurable business growth. His work focuses on aligning product strategy, visual tone, and conversion-focused design to help organizations scale online.<br><br>B.Eng, McMaster University · Master's Degree, Harvard University</p>
                 </div>
             </div>
         </section>
@@ -123,5 +126,20 @@
     <div id="footer-container"></div>
     <script src="scripts/main.js"></script>
     <script src="scripts/contact-gradient.js"></script>
+    <script>
+        // Bio toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const bioToggle = document.querySelector('.bio-toggle');
+            const bio = document.getElementById('contact-bio');
+            
+            if (bioToggle && bio) {
+                bioToggle.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    bio.hidden = isExpanded;
+                });
+            }
+        });
+    </script>
 </body>
 </html>
