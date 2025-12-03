@@ -114,6 +114,10 @@
                     <div class="contact-label">联系我们</div>
                     <h1 class="contact-title">发送邮件</h1>
                     <a href="mailto:mario.xu@wtheory.com" class="contact-email">mario.xu@wtheory.com</a>
+                    <button class="bio-toggle" aria-expanded="false" aria-controls="contact-bio">
+                        <span class="bio-toggle-icon">+</span>
+                    </button>
+                    <p class="contact-bio" id="contact-bio" hidden>Mario Xu 是一位扎根多伦多的商业战略与数字产品领导者，将商业思维与精致创意方向相融合。<br><br>他带领一支由资深网页设计师、服务设计师、字体设计师和文案策划组成的跨领域团队，打造兼具战略深度与视觉美感的网站及品牌体验，助力客户实现可衡量的商业增长。他的工作核心在于统合产品战略、视觉调性与转化导向设计，帮助企业在数字领域稳步扩张。<br><br>麦克马斯特大学工学学士 · 哈佛大学硕士</p>
                 </div>
             </div>
         </section>
@@ -174,5 +178,20 @@
         }
     </script>
     <script src="../scripts/contact-gradient.js"></script>
+    <script>
+        // Bio toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const bioToggle = document.querySelector('.bio-toggle');
+            const bio = document.getElementById('contact-bio');
+            
+            if (bioToggle && bio) {
+                bioToggle.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    bio.hidden = isExpanded;
+                });
+            }
+        });
+    </script>
 </body>
 </html>
