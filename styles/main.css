@@ -858,6 +858,32 @@ button {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-areas {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-areas-title {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 0.05em;
+}
+
+.footer-areas-list {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .footer-copyright {
     font-family: var(--font-heading);
     font-size: 0.75rem;
