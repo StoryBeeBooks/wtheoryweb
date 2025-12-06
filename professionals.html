@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <!-- Package Details Section -->
+                <!-- Package Details Section -->
         <section class="packages-section">
             <div class="container">
                 <h2 class="section-title">What's Included</h2>
@@ -130,60 +130,233 @@
                 <!-- Pricing Cards Row -->
                 <div class="pricing-cards-row">
                     <!-- Card 1: Hosting -->
-                    <div class="pricing-card" data-package="hosting">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">01</span>
-                            <h3 class="pricing-card-title">Infrastructure & Hosting</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">$120</span>
-                                <span class="price-term">/year</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="hosting">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">01</span>
+                                <h3 class="pricing-card-title">Infrastructure & Hosting</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">$120</span>
+                                    <span class="price-term">/year</span>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Hosting Details -->
+                        <div class="package-details" id="details-hosting" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>Core Web Infrastructure & Hosting</h3>
+                                    <button class="close-details-btn" aria-label="Close details">×</button>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">AI-First Cloud Architecture</h4>
+                                    <p class="feature-description">We host your site using static, serverless technology on the Global Content Delivery Network.</p>
+                                    <div class="feature-detail">
+                                        <h5>Why this matters:</h5>
+                                        <p>Unlike slow WordPress servers that block bots, our static architecture allows AI Crawlers (like ChatGPT, Google Gemini, and Perplexity) to index your business data instantly.</p>
+                                    </div>
+                                    <div class="feature-detail">
+                                        <h5>The Benefit:</h5>
+                                        <p>This "Machine-Readable" speed directly boosts your GEO (Geo-targeted Engine Optimization) score, ensuring your business details are accurately fed into the AI systems that customers use to find local services.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Managed Domain Registration</h4>
+                                    <p class="feature-description">Search, registration, and annual renewal of one .com or .ca domain name.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">DNS Management</h4>
+                                    <p class="feature-description">Professional configuration of A Records, CNAMEs, and TXT records to ensure your domain is verified and healthy.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">SSL Security Certificate</h4>
+                                    <p class="feature-description">Implementation of https:// encryption (Let's Encrypt) to ensure the "Secure" padlock appears in browsers, which is a mandatory ranking signal for Google.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">99.9% Uptime Guarantee</h4>
+                                    <p class="feature-description">Your site lives on a distributed network, meaning it does not go down even if one server fails.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Zero-Database Security</h4>
+                                    <p class="feature-description">The site is built with pure HTML5/CSS/JS. Because there is no database to hack and no plugins to update, your site is virtually immune to the malware attacks that plague standard small business websites.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 2: Design -->
-                    <div class="pricing-card" data-package="design">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">02</span>
-                            <h3 class="pricing-card-title">Design & Architecture</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">$299</span>
-                                <span class="price-term">one-time</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="design">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">02</span>
+                                <h3 class="pricing-card-title">Design & Architecture</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">$299</span>
+                                    <span class="price-term">one-time</span>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Design Details -->
+                        <div class="package-details" id="details-design" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>Custom Design & Architecture</h3>
+                                    <button class="close-details-btn" aria-label="Close details">×</button>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">1-Hour Client Onboarding Meeting <span class="feature-tag">Virtual</span></h4>
+                                    <p class="feature-description">A dedicated virtual consultation to understand your business, discuss your brand vision, review content requirements, and align on design preferences before we begin building your site.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">5-Page Architecture</h4>
+                                    <ul class="feature-list">
+                                        <li><strong>Home Page:</strong> Hero section with "Call to Action" buttons, Trust Badges, and Review Snippets.</li>
+                                        <li><strong>About Us:</strong> Personal bio section, "Our Story," and Team photos.</li>
+                                        <li><strong>Services Menu:</strong> A detailed breakdown of offerings (e.g., "Pre-Purchase Inspection" vs "Tarion Warranty Inspection").</li>
+                                        <li><strong>FAQ & Knowledge Share:</strong> Accordion-style FAQ section for common customer questions.</li>
+                                        <li><strong>Get a Quote / Contact:</strong> Optimized intake form or direct "Click-to-Call" functionality.</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Instant Lead Notification System <span class="feature-tag">Web3Forms</span></h4>
+                                    <p class="feature-description">We implement secure, serverless contact forms using Web3Forms technology.</p>
+                                    <div class="feature-detail">
+                                        <h5>How it works:</h5>
+                                        <p>When a customer fills out the "Request a Quote" form, the details are routed directly to your preferred email inbox (Gmail, Outlook, Yahoo, etc.) in real-time.</p>
+                                    </div>
+                                    <div class="feature-detail">
+                                        <h5>The Benefit:</h5>
+                                        <p>You never miss a lead. There is no complicated "dashboard" to log into to check messages; if your phone pings with an email, you have the lead.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Industry-Specific "Vibe" Customization</h4>
+                                    <p class="feature-description">Application of a specific Design System (Fonts, Color Palette, Border Radius, Shadow Depth) tailored to the client's preference.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Mobile-First Responsive Layout</h4>
+                                    <p class="feature-description">CSS Grid and Flexbox coding to ensure perfect rendering on iPhone, Android, Tablet, and Desktop.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Sticky Header</h4>
+                                    <p class="feature-description">Navigation bar that stays visible while scrolling (includes Phone Number).</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Accessibility Compliance</h4>
+                                    <p class="feature-description">High contrast text and aria-labels for screen readers.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 3: Content -->
-                    <div class="pricing-card" data-package="content">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">03</span>
-                            <h3 class="pricing-card-title">Content & Copywriting</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">Included</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="content">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">03</span>
+                                <h3 class="pricing-card-title">Content & Copywriting</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">Included</span>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Content Details -->
+                        <div class="package-details" id="details-content" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>Content & Copywriting Advisory</h3>
+                                    <button class="close-details-btn" aria-label="Close details">×</button>
+                                </div>
+                                <p class="package-details-subtitle">We don't just leave blank spaces; we provide the professional framework.</p>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">"Fill-in-the-Blanks" Content Onboarding</h4>
+                                    <p class="feature-description">A guided questionnaire to extract the client's expertise without them needing to write from scratch.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Basic Copywriting Recommendations</h4>
+                                    <p class="feature-description">We provide industry-standard text for Headlines, CTAs, and Service Descriptions (based on the templates) that the client can approve or tweak.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Image/Video Strategy & Optimization</h4>
+                                    <ul class="feature-list">
+                                        <li><strong>Photo Recommendations:</strong> Specific photo types needed (e.g., "Take a photo of your van from this angle").</li>
+                                        <li><strong>Stock Photo Curation:</strong> Selection of 3-5 high-quality royalty-free images if the client lacks photos.</li>
+                                        <li><strong>Image Compression:</strong> Automatic file size reduction without quality loss.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 4: SEO -->
-                    <div class="pricing-card" data-package="seo">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">04</span>
-                            <h3 class="pricing-card-title">Technical SEO & AI Search</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">Included</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="seo">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">04</span>
+                                <h3 class="pricing-card-title">Technical SEO & AI Search</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">Included</span>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="Expand details" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- SEO Details -->
+                        <div class="package-details" id="details-seo" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>Technical SEO & AI Search - Launch Setup</h3>
+                                    <button class="close-details-btn" aria-label="Close details">×</button>
+                                </div>
+                                <p class="package-details-subtitle">The "Under the Hood" features that make online-search engines (Google and Bing) happy.</p>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Google Search Console (GSC) Setup</h4>
+                                    <p class="feature-description">Verification of domain ownership and submission to Google's index.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Bing Webmaster Tools Setup</h4>
+                                    <p class="feature-description">Submission to Bing search engines.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Google Review Link Integration</h4>
+                                    <p class="feature-description">Prominent placement of your Google Business Review link on the website, making it easy for satisfied customers to leave 5-star reviews and boost your local search ranking.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">XML Sitemap Generation</h4>
+                                    <p class="feature-description">Creation of a dynamic sitemap.xml file submitted to Google so crawlers find every page.</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Robots.txt Configuration</h4>
+                                    <p class="feature-description">A clean file instructing bots on what to crawl (and blocking admin areas).</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Meta Tag Optimization</h4>
+                                    <ul class="feature-list">
+                                        <li>Unique Title Tags for every page (&lt;title&gt;).</li>
+                                        <li>Unique Meta Descriptions for click-through rate optimization.</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Schema Markup Implementation <span class="feature-tag">JSON-LD</span></h4>
+                                    <p class="feature-description">Hard-coded structured data telling Google:</p>
+                                    <ul class="feature-list">
+                                        <li>Business Type (e.g., HomeAndConstructionBusiness).</li>
+                                        <li>GeoCoordinates (Latitude/Longitude).</li>
+                                        <li>Price Range.</li>
+                                        <li>Opening Hours.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,178 +380,6 @@
                 <p class="pricing-disclaimer">
                     We reserve the right to decline or discontinue service at our discretion. <strong>Refund Policy:</strong> Full refund available before project setup begins. Once your site is launched, the one-time setup fee is non-refundable. Annual hosting fees are non-refundable and will not be prorated if cancelled by the client.
                 </p>
-                
-                <!-- Expandable Details Panels -->
-                <div class="package-details-container">
-                    <!-- Hosting Details -->
-                    <div class="package-details" id="details-hosting" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>Core Web Infrastructure & Hosting</h3>
-                                <button class="close-details-btn" aria-label="Close details">×</button>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">AI-First Cloud Architecture</h4>
-                                <p class="feature-description">We host your site using static, serverless technology on the Global Content Delivery Network.</p>
-                                <div class="feature-detail">
-                                    <h5>Why this matters:</h5>
-                                    <p>Unlike slow WordPress servers that block bots, our static architecture allows AI Crawlers (like ChatGPT, Google Gemini, and Perplexity) to index your business data instantly.</p>
-                                </div>
-                                <div class="feature-detail">
-                                    <h5>The Benefit:</h5>
-                                    <p>This "Machine-Readable" speed directly boosts your GEO (Geo-targeted Engine Optimization) score, ensuring your business details are accurately fed into the AI systems that customers use to find local services.</p>
-                                </div>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Managed Domain Registration</h4>
-                                <p class="feature-description">Search, registration, and annual renewal of one .com or .ca domain name.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">DNS Management</h4>
-                                <p class="feature-description">Professional configuration of A Records, CNAMEs, and TXT records to ensure your domain is verified and healthy.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">SSL Security Certificate</h4>
-                                <p class="feature-description">Implementation of https:// encryption (Let's Encrypt) to ensure the "Secure" padlock appears in browsers, which is a mandatory ranking signal for Google.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">99.9% Uptime Guarantee</h4>
-                                <p class="feature-description">Your site lives on a distributed network, meaning it does not go down even if one server fails.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Zero-Database Security</h4>
-                                <p class="feature-description">The site is built with pure HTML5/CSS/JS. Because there is no database to hack and no plugins to update, your site is virtually immune to the malware attacks that plague standard small business websites.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Design Details -->
-                    <div class="package-details" id="details-design" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>Custom Design & Architecture</h3>
-                                <button class="close-details-btn" aria-label="Close details">×</button>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">1-Hour Client Onboarding Meeting <span class="feature-tag">Virtual</span></h4>
-                                <p class="feature-description">A dedicated virtual consultation to understand your business, discuss your brand vision, review content requirements, and align on design preferences before we begin building your site.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">5-Page Architecture</h4>
-                                <ul class="feature-list">
-                                    <li><strong>Home Page:</strong> Hero section with "Call to Action" buttons, Trust Badges, and Review Snippets.</li>
-                                    <li><strong>About Us:</strong> Personal bio section, "Our Story," and Team photos.</li>
-                                    <li><strong>Services Menu:</strong> A detailed breakdown of offerings (e.g., "Pre-Purchase Inspection" vs "Tarion Warranty Inspection").</li>
-                                    <li><strong>FAQ & Knowledge Share:</strong> Accordion-style FAQ section for common customer questions.</li>
-                                    <li><strong>Get a Quote / Contact:</strong> Optimized intake form or direct "Click-to-Call" functionality.</li>
-                                </ul>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Instant Lead Notification System <span class="feature-tag">Web3Forms</span></h4>
-                                <p class="feature-description">We implement secure, serverless contact forms using Web3Forms technology.</p>
-                                <div class="feature-detail">
-                                    <h5>How it works:</h5>
-                                    <p>When a customer fills out the "Request a Quote" form, the details are routed directly to your preferred email inbox (Gmail, Outlook, Yahoo, etc.) in real-time.</p>
-                                </div>
-                                <div class="feature-detail">
-                                    <h5>The Benefit:</h5>
-                                    <p>You never miss a lead. There is no complicated "dashboard" to log into to check messages; if your phone pings with an email, you have the lead.</p>
-                                </div>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Industry-Specific "Vibe" Customization</h4>
-                                <p class="feature-description">Application of a specific Design System (Fonts, Color Palette, Border Radius, Shadow Depth) tailored to the client's preference.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Mobile-First Responsive Layout</h4>
-                                <p class="feature-description">CSS Grid and Flexbox coding to ensure perfect rendering on iPhone, Android, Tablet, and Desktop.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Sticky Header</h4>
-                                <p class="feature-description">Navigation bar that stays visible while scrolling (includes Phone Number).</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Accessibility Compliance</h4>
-                                <p class="feature-description">High contrast text and aria-labels for screen readers.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Content Details -->
-                    <div class="package-details" id="details-content" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>Content & Copywriting Advisory</h3>
-                                <button class="close-details-btn" aria-label="Close details">×</button>
-                            </div>
-                            <p class="package-details-subtitle">We don't just leave blank spaces; we provide the professional framework.</p>
-                            <div class="feature-block">
-                                <h4 class="feature-title">"Fill-in-the-Blanks" Content Onboarding</h4>
-                                <p class="feature-description">A guided questionnaire to extract the client's expertise without them needing to write from scratch.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Basic Copywriting Recommendations</h4>
-                                <p class="feature-description">We provide industry-standard text for Headlines, CTAs, and Service Descriptions (based on the templates) that the client can approve or tweak.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Image/Video Strategy & Optimization</h4>
-                                <ul class="feature-list">
-                                    <li><strong>Photo Recommendations:</strong> Specific photo types needed (e.g., "Take a photo of your van from this angle").</li>
-                                    <li><strong>Stock Photo Curation:</strong> Selection of 3-5 high-quality royalty-free images if the client lacks photos.</li>
-                                    <li><strong>Image Compression:</strong> Automatic file size reduction without quality loss.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- SEO Details -->
-                    <div class="package-details" id="details-seo" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>Technical SEO & AI Search - Launch Setup</h3>
-                                <button class="close-details-btn" aria-label="Close details">×</button>
-                            </div>
-                            <p class="package-details-subtitle">The "Under the Hood" features that make online-search engines (Google and Bing) happy.</p>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Google Search Console (GSC) Setup</h4>
-                                <p class="feature-description">Verification of domain ownership and submission to Google's index.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Bing Webmaster Tools Setup</h4>
-                                <p class="feature-description">Submission to Bing search engines.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Google Review Link Integration</h4>
-                                <p class="feature-description">Prominent placement of your Google Business Review link on the website, making it easy for satisfied customers to leave 5-star reviews and boost your local search ranking.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">XML Sitemap Generation</h4>
-                                <p class="feature-description">Creation of a dynamic sitemap.xml file submitted to Google so crawlers find every page.</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Robots.txt Configuration</h4>
-                                <p class="feature-description">A clean file instructing bots on what to crawl (and blocking admin areas).</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Meta Tag Optimization</h4>
-                                <ul class="feature-list">
-                                    <li>Unique Title Tags for every page (&lt;title&gt;).</li>
-                                    <li>Unique Meta Descriptions for click-through rate optimization.</li>
-                                </ul>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Schema Markup Implementation <span class="feature-tag">JSON-LD</span></h4>
-                                <p class="feature-description">Hard-coded structured data telling Google:</p>
-                                <ul class="feature-list">
-                                    <li>Business Type (e.g., HomeAndConstructionBusiness).</li>
-                                    <li>GeoCoordinates (Latitude/Longitude).</li>
-                                    <li>Price Range.</li>
-                                    <li>Opening Hours.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -618,7 +619,7 @@
             
             // Click outside to close
             document.addEventListener('click', function(e) {
-                if (!e.target.closest('.pricing-card') && !e.target.closest('.package-details')) {
+                if (!e.target.closest('.pricing-card-wrapper')) {
                     closeAllDetails();
                 }
             });

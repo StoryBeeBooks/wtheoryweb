@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
@@ -126,7 +126,7 @@
             </div>
         </section>
 
-        <!-- Package Details Section -->
+                <!-- Package Details Section -->
         <section class="packages-section">
             <div class="container">
                 <h2 class="section-title">套餐包含内容</h2>
@@ -134,60 +134,233 @@
                 <!-- Pricing Cards Row -->
                 <div class="pricing-cards-row">
                     <!-- Card 1: Hosting -->
-                    <div class="pricing-card" data-package="hosting">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">01</span>
-                            <h3 class="pricing-card-title">基础设施与云托管</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">$120</span>
-                                <span class="price-term">/年</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="hosting">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">01</span>
+                                <h3 class="pricing-card-title">基础设施与云托管</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">$120</span>
+                                    <span class="price-term">/年</span>
+                                </div>
+                                <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Hosting Details -->
+                        <div class="package-details" id="details-hosting" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>核心网络架构与托管</h3>
+                                    <button class="close-details-btn" aria-label="关闭详情">×</button>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">AI优先云架构 </h4>
+                                    <p class="feature-description">我们采用基于全球内容分发网络（CDN）的静态无服务器技术托管您的网站。</p>
+                                    <div class="feature-detail">
+                                        <h5>为什么这很重要：</h5>
+                                        <p>不同于那些臃肿且对爬虫不友好的传统 WordPress 服务器，我们的静态架构允许 AI 爬虫（如 ChatGPT、Google Gemini 和 Perplexity）即时抓取并索引您的业务数据。</p>
+                                    </div>
+                                    <div class="feature-detail">
+                                        <h5>好处：</h5>
+                                        <p>这种"机器友好"的高速响应能直接提升您的 GEO（生成式引擎优化）分数，确保您的业务信息能被准确收录，并优先推荐给使用 AI 寻找本地服务的潜在客户。</p>
+                                    </div>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">域名注册与管理</h4>
+                                    <p class="feature-description">协助搜索、注册及每年续费一个 .com 或 .ca 域名。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">DNS管理</h4>
+                                    <p class="feature-description">专业配置 A 记录、CNAME 和 TXT 记录，确保您的域名经过验证且运行稳定。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">SSL安全证书</h4>
+                                    <p class="feature-description">部署 HTTPS 加密（Let's Encrypt），确保浏览器地址栏显示"安全"锁图标。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">99.9%正常运行时间保证</h4>
+                                    <p class="feature-description">您的网站部署在分布式网络上，即使单台服务器故障也不会导致网站停机。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">零数据库架构，极致安全</h4>
+                                    <p class="feature-description">网站采用纯 HTML5/CSS/JS 构建。由于没有可被黑客入侵的数据库，也无需更新插件，您的网站几乎免疫困扰传统小型企业网站的恶意软件攻击。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 2: Design -->
-                    <div class="pricing-card" data-package="design">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">02</span>
-                            <h3 class="pricing-card-title">网站设计与架构</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">$299</span>
-                                <span class="price-term">一次性</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="design">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">02</span>
+                                <h3 class="pricing-card-title">网站设计与架构</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">$299</span>
+                                    <span class="price-term">一次性</span>
+                                </div>
+                                <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Design Details -->
+                        <div class="package-details" id="details-design" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>定制化设计与架构</h3>
+                                    <button class="close-details-btn" aria-label="关闭详情">×</button>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">1小时需求咨询会议 <span class="feature-tag">线上</span></h4>
+                                    <p class="feature-description">一对一线上咨询，深入了解您的业务，探讨品牌愿景，审核内容需求，并在建站前就设计偏好达成一致。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">5页标准架构</h4>
+                                    <ul class="feature-list">
+                                        <li><strong>首页：</strong> 包含"立即行动"按钮、专业资质认证（如协会会员标志）和客户评价摘要的首屏视觉区。</li>
+                                        <li><strong>关于我们：</strong> 个人简介、"品牌故事"及团队照片。</li>
+                                        <li><strong>服务列表：</strong> 服务项目的详细分类（例如，"购房前验房"与"Tarion 保修验房"）。</li>
+                                        <li><strong>常见问题与知识库：</strong> 针对客户常见问题的解答专区。</li>
+                                        <li><strong>获取报价/联系我们：</strong> 经过优化的"高转化"询盘表单或移动端"一键拨号"功能。</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">即时询盘通知系统 <span class="feature-tag">Web3Forms</span></h4>
+                                    <p class="feature-description">我们利用 Web3Forms 技术部署安全、无服务器的联系表单。</p>
+                                    <div class="feature-detail">
+                                        <h5>工作原理：</h5>
+                                        <p>当客户填写"请求报价"表单时，详细信息会实时发送到您指定的电子邮箱（Gmail、Outlook、Yahoo 等）。</p>
+                                    </div>
+                                    <div class="feature-detail">
+                                        <h5>好处：</h5>
+                                        <p>确保您不错过任何商机。无需登录复杂的后台查看消息；只要手机收到邮件提醒，您就掌握了潜在客户线索。</p>
+                                    </div>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">行业专属风格定制</h4>
+                                    <p class="feature-description">根据客户偏好量身定制专属设计系统（字体、配色、圆角风格、阴影深度等）。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">移动端优先的响应式布局</h4>
+                                    <p class="feature-description">采用 CSS Grid 和 Flexbox 编码，确保在 iPhone、Android、平板电脑和桌面设备上均能完美呈现。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">悬浮导航栏</h4>
+                                    <p class="feature-description">页面滚动时始终可见的导航栏（包含联系电话）。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">无障碍设计合规</h4>
+                                    <p class="feature-description">高对比度文本及屏幕阅读器标签支持。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 3: Content -->
-                    <div class="pricing-card" data-package="content">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">03</span>
-                            <h3 class="pricing-card-title">内容策划与文案</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">全包</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="content">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">03</span>
+                                <h3 class="pricing-card-title">内容策划与文案</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">全包</span>
+                                </div>
+                                <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- Content Details -->
+                        <div class="package-details" id="details-content" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>内容策划与文案咨询</h3>
+                                    <button class="close-details-btn" aria-label="关闭详情">×</button>
+                                </div>
+                                <p class="package-details-subtitle">提供专业的内容框架指导。</p>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">结构化内容采集向导</h4>
+                                    <p class="feature-description">通过引导式问卷，挖掘您的专业知识，无需从零开始撰写。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">基础文案优化</h4>
+                                    <p class="feature-description">我们为标题、行动号召和服务描述提供基于模板的行业标准文案，供您审批或调整。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">图片/视频策略与优化</h4>
+                                    <ul class="feature-list">
+                                        <li><strong>拍摄建议：</strong> 指导您拍摄所需的具体照片类型（例如，"从特定角度拍摄您的工作车"）。</li>
+                                        <li><strong>精选图库：</strong> 如果您缺少素材，我们将为您提供 3-5 张高质量的正版授权商业图片。</li>
+                                        <li><strong>智能压缩：</strong> 自动压缩图片大小，在保持画质的同时提升加载速度。</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Card 4: SEO -->
-                    <div class="pricing-card" data-package="seo">
-                        <div class="pricing-card-header">
-                            <span class="pricing-card-number">04</span>
-                            <h3 class="pricing-card-title">技术SEO与AI搜索优化</h3>
-                            <div class="pricing-card-price">
-                                <span class="price-value">全包</span>
+                    <div class="pricing-card-wrapper">
+                        <div class="pricing-card" data-package="seo">
+                            <div class="pricing-card-header">
+                                <span class="pricing-card-number">04</span>
+                                <h3 class="pricing-card-title">技术SEO与AI搜索优化</h3>
+                                <div class="pricing-card-price">
+                                    <span class="price-value">全包</span>
+                                </div>
+                                <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
+                                    <span class="expand-icon">+</span>
+                                </button>
                             </div>
-                            <button class="expand-btn" aria-label="展开详情" aria-expanded="false">
-                                <span class="expand-icon">+</span>
-                            </button>
+                        </div>
+                        <!-- SEO Details -->
+                        <div class="package-details" id="details-seo" hidden>
+                            <div class="package-details-inner">
+                                <div class="package-details-header">
+                                    <h3>技术 SEO 与 AI 搜索 - 上线配置</h3>
+                                    <button class="close-details-btn" aria-label="关闭详情">×</button>
+                                </div>
+                                <p class="package-details-subtitle">优化底层代码，让 Google 和 Bing 等搜索引擎更青睐您的网站。</p>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Google Search Console (GSC) 配置</h4>
+                                    <p class="feature-description">验证域名所有权并提交至 Google 索引库。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Bing Webmaster Tools 配置</h4>
+                                    <p class="feature-description">提交至 Bing 搜索引擎。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Google 商家评论集成</h4>
+                                    <p class="feature-description">在网站显著位置展示您的 Google 商家评论链接，方便客户留下五星好评，从而提升您的本地搜索排名。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">生成 XML 网站地图</h4>
+                                    <p class="feature-description">创建动态 sitemap.xml 文件并提交给 Google，确保爬虫能抓取到每一个页面。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Robots.txt 配置</h4>
+                                    <p class="feature-description">配置清晰的规则文件，指示爬虫抓取内容（并屏蔽管理区域）。</p>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Meta 标签优化</h4>
+                                    <ul class="feature-list">
+                                        <li>为每个页面设置独立的标题标签（&lt;title&gt;）。</li>
+                                        <li>针对点击率优化的独立元描述（Meta Description）。</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-block">
+                                    <h4 class="feature-title">Schema 结构化数据部署 <span class="feature-tag">JSON-LD</span></h4>
+                                    <p class="feature-description">通过代码层面的结构化数据标记向 Google 精准传达：</p>
+                                    <ul class="feature-list">
+                                        <li>业务类型（例如：家居与建筑服务）。</li>
+                                        <li>地理坐标（经纬度）。</li>
+                                        <li>价格范围。</li>
+                                        <li>营业时间。</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,178 +384,6 @@
                 <p class="pricing-disclaimer">
                     我们保留拒绝或终止服务的权利。退款政策：项目启动前可<strong>全额退款</strong>。网站上线后，设计费恕不退还，年度托管费亦不退还。
                 </p>
-                
-                <!-- Expandable Details Panels -->
-                <div class="package-details-container">
-                    <!-- Hosting Details -->
-                    <div class="package-details" id="details-hosting" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>核心网络架构与托管</h3>
-                                <button class="close-details-btn" aria-label="关闭详情">×</button>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">AI优先云架构 </h4>
-                                <p class="feature-description">我们采用基于全球内容分发网络（CDN）的静态无服务器技术托管您的网站。</p>
-                                <div class="feature-detail">
-                                    <h5>为什么这很重要：</h5>
-                                    <p>不同于那些臃肿且对爬虫不友好的传统 WordPress 服务器，我们的静态架构允许 AI 爬虫（如 ChatGPT、Google Gemini 和 Perplexity）即时抓取并索引您的业务数据。</p>
-                                </div>
-                                <div class="feature-detail">
-                                    <h5>好处：</h5>
-                                    <p>这种“机器友好”的高速响应能直接提升您的 GEO（生成式引擎优化）分数，确保您的业务信息能被准确收录，并优先推荐给使用 AI 寻找本地服务的潜在客户。</p>
-                                </div>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">域名注册与管理</h4>
-                                <p class="feature-description">协助搜索、注册及每年续费一个 .com 或 .ca 域名。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">DNS管理</h4>
-                                <p class="feature-description">专业配置 A 记录、CNAME 和 TXT 记录，确保您的域名经过验证且运行稳定。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">SSL安全证书</h4>
-                                <p class="feature-description">部署 HTTPS 加密（Let's Encrypt），确保浏览器地址栏显示“安全”锁图标。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">99.9%正常运行时间保证</h4>
-                                <p class="feature-description">您的网站部署在分布式网络上，即使单台服务器故障也不会导致网站停机。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">零数据库架构，极致安全</h4>
-                                <p class="feature-description">网站采用纯 HTML5/CSS/JS 构建。由于没有可被黑客入侵的数据库，也无需更新插件，您的网站几乎免疫困扰传统小型企业网站的恶意软件攻击。</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Design Details -->
-                    <div class="package-details" id="details-design" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>定制化设计与架构</h3>
-                                <button class="close-details-btn" aria-label="关闭详情">×</button>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">1小时需求咨询会议 <span class="feature-tag">线上</span></h4>
-                                <p class="feature-description">一对一线上咨询，深入了解您的业务，探讨品牌愿景，审核内容需求，并在建站前就设计偏好达成一致。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">5页标准架构</h4>
-                                <ul class="feature-list">
-                                    <li><strong>首页：</strong> 包含“立即行动”按钮、专业资质认证（如协会会员标志）和客户评价摘要的首屏视觉区。</li>
-                                    <li><strong>关于我们：</strong> 个人简介、“品牌故事”及团队照片。</li>
-                                    <li><strong>服务列表：</strong> 服务项目的详细分类（例如，“购房前验房”与“Tarion 保修验房”）。</li>
-                                    <li><strong>常见问题与知识库：</strong> 针对客户常见问题的解答专区。</li>
-                                    <li><strong>获取报价/联系我们：</strong> 经过优化的“高转化”询盘表单或移动端“一键拨号”功能。</li>
-                                </ul>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">即时询盘通知系统 <span class="feature-tag">Web3Forms</span></h4>
-                                <p class="feature-description">我们利用 Web3Forms 技术部署安全、无服务器的联系表单。</p>
-                                <div class="feature-detail">
-                                    <h5>工作原理：</h5>
-                                    <p>当客户填写“请求报价”表单时，详细信息会实时发送到您指定的电子邮箱（Gmail、Outlook、Yahoo 等）。</p>
-                                </div>
-                                <div class="feature-detail">
-                                    <h5>好处：</h5>
-                                    <p>确保您不错过任何商机。无需登录复杂的后台查看消息；只要手机收到邮件提醒，您就掌握了潜在客户线索。</p>
-                                </div>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">行业专属风格定制</h4>
-                                <p class="feature-description">根据客户偏好量身定制专属设计系统（字体、配色、圆角风格、阴影深度等）。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">移动端优先的响应式布局</h4>
-                                <p class="feature-description">采用 CSS Grid 和 Flexbox 编码，确保在 iPhone、Android、平板电脑和桌面设备上均能完美呈现。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">悬浮导航栏</h4>
-                                <p class="feature-description">页面滚动时始终可见的导航栏（包含联系电话）。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">无障碍设计合规</h4>
-                                <p class="feature-description">高对比度文本及屏幕阅读器标签支持。</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Content Details -->
-                    <div class="package-details" id="details-content" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>内容策划与文案咨询</h3>
-                                <button class="close-details-btn" aria-label="关闭详情">×</button>
-                            </div>
-                            <p class="package-details-subtitle">提供专业的内容框架指导。</p>
-                            <div class="feature-block">
-                                <h4 class="feature-title">结构化内容采集向导</h4>
-                                <p class="feature-description">通过引导式问卷，挖掘您的专业知识，无需从零开始撰写。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">基础文案优化</h4>
-                                <p class="feature-description">我们为标题、行动号召和服务描述提供基于模板的行业标准文案，供您审批或调整。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">图片/视频策略与优化</h4>
-                                <ul class="feature-list">
-                                    <li><strong>拍摄建议：</strong> 指导您拍摄所需的具体照片类型（例如，“从特定角度拍摄您的工作车”）。</li>
-                                    <li><strong>精选图库：</strong> 如果您缺少素材，我们将为您提供 3-5 张高质量的正版授权商业图片。</li>
-                                    <li><strong>智能压缩：</strong> 自动压缩图片大小，在保持画质的同时提升加载速度。</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- SEO Details -->
-                    <div class="package-details" id="details-seo" hidden>
-                        <div class="package-details-inner">
-                            <div class="package-details-header">
-                                <h3>技术 SEO 与 AI 搜索 - 上线配置</h3>
-                                <button class="close-details-btn" aria-label="关闭详情">×</button>
-                            </div>
-                            <p class="package-details-subtitle">优化底层代码，让 Google 和 Bing 等搜索引擎更青睐您的网站。</p>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Google Search Console (GSC) 配置</h4>
-                                <p class="feature-description">验证域名所有权并提交至 Google 索引库。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Bing Webmaster Tools 配置</h4>
-                                <p class="feature-description">提交至 Bing 搜索引擎。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Google 商家评论集成</h4>
-                                <p class="feature-description">在网站显著位置展示您的 Google 商家评论链接，方便客户留下五星好评，从而提升您的本地搜索排名。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">生成 XML 网站地图</h4>
-                                <p class="feature-description">创建动态 sitemap.xml 文件并提交给 Google，确保爬虫能抓取到每一个页面。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Robots.txt 配置</h4>
-                                <p class="feature-description">配置清晰的规则文件，指示爬虫抓取内容（并屏蔽管理区域）。</p>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Meta 标签优化</h4>
-                                <ul class="feature-list">
-                                    <li>为每个页面设置独立的标题标签（&lt;title&gt;）。</li>
-                                    <li>针对点击率优化的独立元描述（Meta Description）。</li>
-                                </ul>
-                            </div>
-                            <div class="feature-block">
-                                <h4 class="feature-title">Schema 结构化数据部署 <span class="feature-tag">JSON-LD</span></h4>
-                                <p class="feature-description">通过代码层面的结构化数据标记向 Google 精准传达：</p>
-                                <ul class="feature-list">
-                                    <li>业务类型（例如：家居与建筑服务）。</li>
-                                    <li>地理坐标（经纬度）。</li>
-                                    <li>价格范围。</li>
-                                    <li>营业时间。</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -667,7 +668,7 @@
             
             // Click outside to close
             document.addEventListener('click', function(e) {
-                if (!e.target.closest('.pricing-card') && !e.target.closest('.package-details')) {
+                if (!e.target.closest('.pricing-card-wrapper')) {
                     closeAllDetails();
                 }
             });

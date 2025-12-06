@@ -274,6 +274,40 @@
     margin-bottom: var(--spacing-xl);
 }
 
+/* Wrapper for each card + its details */
+.pricing-card-wrapper {
+    display: contents;
+}
+
+.pricing-card-wrapper .pricing-card {
+    background: #fafafa;
+    border-radius: 12px;
+    border: 2px solid var(--color-border);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.pricing-card-wrapper .pricing-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card-wrapper .pricing-card.active {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Details panel inside wrapper - spans full row */
+.pricing-card-wrapper .package-details {
+    grid-column: 1 / -1;
+    background: var(--color-secondary);
+    border-radius: 16px;
+    border: 2px solid var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    animation: slideDown 0.3s ease;
+}
+
 .pricing-card {
     background: #fafafa;
     border-radius: 12px;
@@ -431,11 +465,7 @@
     border: 1px solid var(--color-primary);
 }
 
-/* Package Details Container */
-.package-details-container {
-    margin-top: var(--spacing-lg);
-}
-
+/* Package Details - Inline expansion */
 .package-details {
     background: var(--color-secondary);
     border-radius: 16px;
