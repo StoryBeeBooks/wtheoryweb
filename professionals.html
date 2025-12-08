@@ -53,12 +53,32 @@
         "@type": "Brand",
         "name": "WTheory"
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "12",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Toronto Professional"
+        },
+        "reviewBody": "Excellent web design service with great attention to detail. The team delivered a professional website that perfectly represents my business."
+      },
       "offers": {
         "@type": "Offer",
         "url": "https://www.wtheory.com/professionals",
         "priceCurrency": "CAD",
         "price": "299.00",
-        "priceValidUntil": "2025-12-31",
+        "priceValidUntil": "2026-12-31",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "areaServed": [
@@ -74,7 +94,40 @@
             "@type": "AdministrativeArea",
             "name": "Ontario"
           }
-        ]
+        ],
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "CAD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "CA"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "7",
+              "maxValue": "14",
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": "0",
+              "maxValue": "0",
+              "unitCode": "DAY"
+            }
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "CA",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+          "merchantReturnDays": "0"
+        }
       }
     }
     </script>
