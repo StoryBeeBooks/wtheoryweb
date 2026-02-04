@@ -308,6 +308,25 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project-card" data-category="retail" data-title="Aronia's Gift" data-tags="#网页 #零售 #健康养生 #功能饮品">
+                            <div class="project-frame">
+                                <img src="https://assets.k12path.com/wtheory/Aronia's%20Gift.jpg" 
+                                     alt="Aronia's Gift 功能性健康饮品品牌 - 有机科学美学超级食品电商网站设计"
+                                     loading="lazy"
+                                     onerror="this.style.display='none'">
+                                <div class="project-overlay">
+                                    <div class="project-info">
+                                        <h3>Aronia's Gift</h3>
+                                        <a href="#" class="strategy-link" onclick="openModal('aroniasgift'); return false;">
+                                            查看设计策略
+                                        </a>
+                                        <a href="https://www.aroniasgift.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                            访问网站 →
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1308,6 +1327,133 @@
                 });
             }
         }
+
+        // Modal for Aronia's Gift
+        const aroniasgiftModal = document.createElement('div');
+        aroniasgiftModal.id = 'aroniasgift-modal';
+        aroniasgiftModal.className = 'modal';
+        aroniasgiftModal.innerHTML = `
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal('aroniasgift')">&times;</button>
+                
+                <h1 class="modal-title">Aronia's Gift：设计策略与品牌叙事</h1>
+                
+                <div class="modal-section">
+                    <h2 class="modal-section-title">1. 品牌概念与定位</h2>
+                    
+                    <h3 class="modal-subsection-title">品牌身份</h3>
+                    <p class="modal-text">
+                        Aronia's Gift 是一个融合双重叙事的健康品牌：野樱莓的古老神话传说（"治愈者之誓"）与前沿食品科技（内布拉斯加大学衍生技术）。它不仅是一个电商平台，更是一个教育中心，致力于为现代消费者揭开这颗"被遗忘的超级食物"的神秘面纱。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">品牌使命</h3>
+                    <p class="modal-text">
+                        品牌的核心使命是重塑野樱莓的市场认知。长期以来，这种浆果因过于涩口或苦味而被认为不适合日常食用。Aronia's Gift 通过专利纤维包裹技术"驯服"单宁的收敛感，将这种难以入口的原料转化为每日健康仪式中美味可口的一环。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">目标客群</h3>
+                    <ul class="modal-list">
+                        <li><strong>抗氧化探索者：</strong>熟悉蓝莓、巴西莓的健康意识消费者，正在寻求更强效的"下一代"抗氧化方案（3倍抗氧化力）</li>
+                        <li><strong>天然主义家长：</strong>为家人寻找无高糖、纯天然的消化和免疫健康方案</li>
+                        <li><strong>商业合作伙伴：</strong>寻求经科学验证的功能性饮品的经销商和B2B客户</li>
+                    </ul>
+                    
+                    <h3 class="modal-subsection-title">战略目标</h3>
+                    <ul class="modal-list">
+                        <li><strong>以教育促转化：</strong>通过深度科普内容，引导用户从"这是什么酸涩浆果？"转变为"我需要这种细胞级保护"</li>
+                        <li><strong>证明高端定价：</strong>以"大学技术衍生"和"专利申请中"的背书支撑功能性饮品的溢价定位</li>
+                        <li><strong>优化B2B运营：</strong>通过定制化经销商门户实现批发订单自动化，将消费者教育与批量物流分离</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h2 class="modal-section-title">2. 视觉语言体系</h2>
+                    
+                    <h3 class="modal-subsection-title">美学风格："有机科学"</h3>
+                    <p class="modal-text">
+                        设计语言在民间传说的温暖质感与实验室的纯净感之间取得平衡。避免杂乱的"农贸市场"风格，转而采用精致、临床感的美学，传递安全、有效、有科研背书的信号。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">视觉层次与色彩</h3>
+                    <p class="modal-text">
+                        <strong>临床白与奶油色：</strong>网站大量使用留白（白色背景）来衬托产品。这种"白大褂"式的洁净感建立起对产品纯净度和"无添加糖"承诺的信任。
+                    </p>
+                    <p class="modal-text">
+                        <strong>植物绿与深紫：</strong>摒弃鲜艳甜腻的水果色调，转而使用沉稳的深林绿作为排版色彩，野樱莓紫作为点缀色。这让品牌扎根自然，同时与普通果汁区隔开来。
+                    </p>
+                    <p class="modal-text">
+                        <strong>数据可视化：</strong>网站大量使用清晰的对比图表（如"野樱莓 vs. 蓝莓"），将抗氧化剂等"看不见"的功效变得可见、可量化。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">字体即语气</h3>
+                    <ul class="modal-list">
+                        <li><strong>编辑风格衬线体（标题）：</strong>用于"治愈者之誓"等故事叙述板块，唤起传统、历史和品牌的"神话"气质</li>
+                        <li><strong>几何无衬线体（数据/正文）：</strong>用于"营养成分"、"ORAC值"和购买流程的清晰易读字体，确保复杂科学数据易于消化理解</li>
+                    </ul>
+                    
+                    <h3 class="modal-subsection-title">网格系统</h3>
+                    <p class="modal-text">
+                        "杂志"和产品板块采用瀑布流式网格布局。这使得食谱、深度科普文章和产品图片等多种内容类型能够和谐共存而不显杂乱，鼓励用户在购买前自由"浏览"信息。
+                    </p>
+                </div>
+                
+                <div class="modal-section">
+                    <h2 class="modal-section-title">3. 设计意图：构建背后的思考</h2>
+                    
+                    <h3 class="modal-subsection-title">"神话+科学"双轨策略</h3>
+                    <p class="modal-text">
+                        首页以"治愈者之誓"（神话）开篇，随即过渡到"氧化的危害"（科学）。
+                    </p>
+                    <p class="modal-text">
+                        <strong>设计意图：</strong>情感与理性双重钩子。神话抓住人心（故事感染力），原子物理学解释抓住大脑（科学验证）。这种双轨策略同时捕获感性买家和理性怀疑者。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">"防御机制"重构</h3>
+                    <p class="modal-text">
+                        网站专门设有"涩味的生物化学"等科普文章。
+                    </p>
+                    <p class="modal-text">
+                        <strong>设计意图：</strong>异议预处理。与其隐藏浆果的干涩/苦味，不如将其重新定义为功效强大的生物标志（"这正是卓越健康效益的信号"）。将潜在的产品缺陷转化为独特卖点。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">智能后台集成</h3>
+                    <p class="modal-text">
+                        系统内置经销商和员工专属门户。
+                    </p>
+                    <p class="modal-text">
+                        <strong>设计意图：</strong>运营可扩展性。通过数字化供应链和员工管理，确保面向消费者的"高触感"网站体验不会给后台团队带来"高阻力"的手动工作。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">ORAC对比锚定</h3>
+                    <p class="modal-text">
+                        视觉图表明确对比野樱莓与接骨木莓、蓝莓、巴西莓的数据。
+                    </p>
+                    <p class="modal-text">
+                        <strong>设计意图：</strong>相对价值感知。顾客可能对价格犹豫，但当他们看到这个等式："一瓶 = 1000颗蓝莓"，产品在营养密度层面立刻显得物超所值。
+                    </p>
+                </div>
+                
+                <div class="modal-section">
+                    <h2 class="modal-section-title">4. 战略影响</h2>
+                    
+                    <h3 class="modal-subsection-title">支撑"功能性"溢价</h3>
+                    <p class="modal-text">
+                        通过大学研究、专利图解和生物化学阐释的层层包装，设计将野樱莓汁从"饮料"提升为"营养补剂"。这使品牌能够比超市货架上的普通果汁获得更高的定价空间。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">构建"内容护城河"</h3>
+                    <p class="modal-text">
+                        丰富的"杂志"板块（食谱、研究、种植指南）不仅仅是为了卖果汁，更是在建立权威。这些SEO友好的内容确保 Aronia's Gift 能够截获关于抗氧化剂、肠道健康和单宁的通用搜索流量，为销售漏斗源源不断地输送高意向潜客。
+                    </p>
+                    
+                    <h3 class="modal-subsection-title">跨越口味鸿沟</h3>
+                    <p class="modal-text">
+                        野樱莓普及的最大障碍是口感。设计策略通过前置"HPP冷压"和"纤维包裹技术"的信息来化解这一顾虑。用户在将产品加入购物车之前，就已经相信口感问题已被技术攻克。
+                    </p>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(aroniasgiftModal);
 
         // Modal for Mystik Cafe
         const mystikcafeModal = document.createElement('div');
