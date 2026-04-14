@@ -1,3 +1,5 @@
+# This is the AGENCY (WEBSITE) part of the Wtheory. 
+
 # WTheory - Web Design Studio Website
 
 A modern, interactive web design studio portfolio showcasing projects for Industrial, Nonprofit, and Art sectors.
